@@ -1,0 +1,9 @@
+query last_projects($n: Int = %v) {
+    projects(last: $n) {
+        nodes {
+            name
+            description
+            forksCount
+        }
+    }
+}
